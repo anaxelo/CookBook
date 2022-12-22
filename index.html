@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="kapibara.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <title>Книга ПП рецептов</title>
+</head>
+
+<body>
+    <header>
+        
+        <h1 id="first-red">
+            <img class="marginauto" src="kapibara.jpg" width=20px> 
+            <strong> Книга ПП рецептов</strong>
+            <img class="marginauto" src="kapibara.jpg" width=20px> 
+        </h1>
+
+        <nav>
+            <table class="full-width">
+                <tr class="full-width">
+                    <td class="nav-item">
+                        <div>
+                            <i class="fa fa-plus"></i>
+                            <strong> Новый рецепт</strong>
+                        </div>
+                    </td>
+                    <td class="nav-item">
+                        <select name="text">
+                            <option value="value1">Овощной лёгкий салатик с говядиной</option>
+                            <option value="value2" selected>Выберите рецепт...</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
+        </nav>
+
+    </header>
+    <main>
+        <section>
+            <h3 class="red-ish">
+                <i class="fa fa-info"></i> О
+            </h3>
+
+            <form>
+
+                <div>
+                    <label for="title">Название рецепта</label>
+                    <input type="text" name="title" id="title" placeholder="Название">
+                </div>
+                <div>
+                    <label for="message-box"> Описание</label>
+                    <textarea name="message" id="message-box" rows="10" cols="30" placeholder="Информация о рецепте"></textarea>
+                </div>
+
+                <section class="container">
+
+                    <div class="item" id="order1">
+                        <label for="portions"> Порции</label>
+                    </div>
+                    <div class="item" id="order3">
+                        <label for="time"> Время(мин)</label>
+                    </div>
+                    <div class="item" id="order5">
+                        <label for="dificulty"> Сложность</label>
+                    </div>
+
+                    <div class="item" id="order2">
+
+                        <select name="portions">
+                            <option value="value1" selected>1</option>
+                            <option value="value2">2</option>
+                            <option value="value3">3</option>
+                            <option value="value4">4</option>
+                            <option value="value5">5</option>
+                            <option value="value6">6</option>
+                            <option value="value7">7</option>
+                            <option value="value8">8</option>
+                            <option value="value9">9</option>
+                            <option value="value10">10</option>
+
+                        </select>
+                    </div>
+                    <div class="item" id="order4">
+                        <select name="time">
+                            <option value="value1" selected>5</option>
+                            <option value="value2">10</option>
+                            <option value="value3">15</option>
+                            <option value="value4">20</option>
+                            <option value="value5">30</option>
+                            <option value="value6">45</option>
+                            <option value="value7">60</option>
+                            <option value="value8">90</option>
+                            <option value="value9">120</option>
+
+                        </select>
+
+                    </div>
+                    <div class="item" id="order6">
+                        <select name="dificulty">
+                            <option value="value1" selected>1</option>
+                            <option value="value2">2</option>
+                            <option value="value3">3</option>
+                            <option value="value4">4</option>
+                            <option value="value5">5</option>
+
+                        </select>
+                    </div>
+                </section>
+
+            </form>
+
+
+        </section>
+
+
+        <section>
+            <h3 class="red-ish">
+                <i class="fa fa-list"></i> Ингредиенты
+            </h3>
+
+            <div class="ingredients">
+
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 200 г говядина</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 3 шт помидор</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 2 шт огурцы</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 1 шт болгарский перец</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 1 шт луковица</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 1 ст.л. оливковое масло</div>
+                <div>
+                    <i class="right"></i>
+                    <i class="right"></i> 1 ст.л. лимонный сок</div>
+            </div>
+
+            <section class="grid-container">
+
+
+                <div class="grid-item">
+                    <input type="text" name="qty" placeholder="кол-во">
+                </div>
+                <div class="grid-item" id="unit">
+
+                    <select name="text">
+                        <option value="value1" selected>мера</option>
+                        <option value="value2">г</option>
+                        <option value="value3">кг</option>
+                        <option value="value4">шт</option>
+                        <option value="value5">мл</option>
+                        <option value="value6">л</option>
+                        <option value="value7">ст.л</option>
+
+                    </select>
+
+                </div>
+                <div class="grid-item" id="ingredient">
+                    <input type="text" name="ing" placeholder="ингредиент" >
+                </div>
+
+                <div class="grid-item">
+                    <button type="submit">
+                        <i class="fa fa-plus-square"></i>
+                    </button>
+                </div>
+            </section>
+
+
+
+        </section>
+        
+        <section>
+            <h3 class="red-ish">
+                <i class="fa fa-list"></i> Полезные элементы
+            </h3>
+            <br>
+            <h3 class="text-table">
+                На 100г готового блюда:
+            </h3>
+            <br>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Бел,г</th>
+                            <th>Жир,г</th>
+                            <th>Угл,г</th>
+                            <th>Ккал</th>
+                            <th>Витамин B1</th>
+                            <th>Витамин C</th>
+                            <th>Витамин D</th>
+                            <th>Витамин E</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>7.12</td>
+                            <td>5.43</td>
+                            <td>3.13</td>
+                            <td>89.48</td>
+                            <td>0.4</td>
+                            <td>228</td>
+                            <td>0</td>
+                            <td>2.4</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <section class="grid-container">
+                    <div class="grid-item">
+                        <input type="text" name="qty" placeholder="кол-во">
+                    </div>
+                    <div class="grid-item" id="unit">
+                        <select name="text">
+                            <option value="value1" selected>мера</option>
+                            <option value="value2">г</option>
+                            <option value="value3">мк г</option>
+                            <option value="value4">-</option>
+                        </select>
+                    </div>
+                    <div class="grid-item" id="ingredient">
+                        <input type="text" name="ing" placeholder="полезный элемент">
+                    </div>
+    
+                    <div class="grid-item">
+                        <button type="submit">
+                            <i class="fa fa-plus-square"></i>
+                        </button>
+                    </div>
+                </section>
+                <div>
+                    <h3 class="text-table">
+                        Вам нужно добрать суточную норму витаминов. СЪЕШЬТЕ ЕЩЕ ЧТО-НИБУДЬ!!!
+                    </h3>
+                </div>
+                <br>
+        </section>
+
+        <section>
+            <h3 class="red-ish">
+                <i class="fa fa-list-ol"></i> Шаги
+            </h3>
+
+            <div>
+
+                <ol>
+                    <li>
+                        Нарезаем кольцами лук (можно полукольцами).
+                    </li>
+                    <li>
+                        Режем произвольно помидоры.
+                    </li>
+                    <li>
+                        Огурцы очищаем от кожицы и режем небольшими кусочками.
+                    </li>
+                    <li>
+                        Болгарский перец и отварную говядину нарезаем полосками.
+                    </li>
+                    <li>
+                        Все ингредиенты смешиваем, заправляем оливковым маслом, добавляем лимонный сок, соль, перец, зелень – и всё! Вкусный лёгкий салатик из отварной говядины готов!
+                    </li>
+                </ol>
+            </div>
+            <form>
+                <div>
+                    <label for="step-box"> Шаг</label>
+                    <br>
+                    <textarea name="message" id="step-box" rows="10" cols="30" placeholder="Описание шага"></textarea>
+                </div>
+
+
+                <button type="submit" class="add-step">
+                    <i class="fa fa-plus-square"></i> Добавить шаг
+                </button>
+            </form>
+
+
+
+        </section>
+        <footer>
+
+            <div class="container3">
+                <button class="item3">
+                    <i class="fa fa-trash-o"></i> Закрыть </button>
+                <button class="save-button item3">
+                    <i class="fa fa-floppy-o"></i> Сохранить рецепт</button>
+            </div>
+
+        </footer>
+
+        <footer>
+
+            <div class="container3">
+                <span>© 2022 «ХБК» (Хохлов Андрей, Барсуков Игорь, Коломытцева Александра)</span>
+            </div>
+
+        </footer>
+
+    </main>
+</body>
+
+</html>
