@@ -9,10 +9,6 @@ setInterval(() => {
 }, 1000);
 // Закомментировать код выше если нужно будет отключить радужный фон ккк
 
-document.getElementById('12345').addEventListener('click', () => {
-    alert('Андрей гей')
-})
-
 document.getElementById('1111').addEventListener('click', () => {
     let lalala = document.getElementById('22222').value;
     const lalala2 = document.getElementById('333333');
@@ -34,4 +30,30 @@ document.getElementById('banan').addEventListener('click', () => {
 </li>`;
     let hoho = document.getElementById('kukuruza')
     hoho.append(div);
+})
+
+document.getElementById('12345').addEventListener('click', () => {
+    let bb = true;
+    const inputElement = document.getElementById('polezniy_element?').value;
+    const inputValue = document.getElementById('kolvo').value;
+    if (inputElement === "" || inputValue === "") {
+        bb = false;
+        console.log('=> ^_^ Андрей гей 0_0 <=');
+    }
+    for (let i = 0; i < document.getElementById('thead').rows[0].cells.length; i++) {
+        if (document.getElementById('thead').rows[0].cells[i].innerHTML === inputElement) {
+            document.getElementById('tbody').rows[0].cells[i].innerHTML = (+document.getElementById('tbody').rows[0].cells[i].innerHTML + +inputValue).toFixed(2);
+            bb = false;
+        }
+    }
+    if (bb) {
+        const th = document.createElement('th');
+        th.innerHTML = `${inputElement}`;
+        let haha = document.getElementById('id')
+        haha.append(th);
+        const td = document.createElement('td');
+        td.innerHTML = `${inputValue}`;
+        let hihi = document.getElementById('tr')
+        hihi.append(td);
+    }
 })
