@@ -31,7 +31,8 @@
                     <td class="nav-item">
                         <select name="text">
                             <option value="value1">Овощной лёгкий салатик с говядиной</option>
-                            <option value="value2" selected>Выберите рецепт...</option>
+                            <option value="value2">Хотите жить счастливо? Нужно всего лишь по утрам выпивать по одной ложке...</option>
+                            <option value="value3" selected>Выберите рецепт...</option>
                         </select>
                     </td>
                 </tr>
@@ -192,11 +193,11 @@
             </h3>
             <br>
                 <table class="table">
-                    <thead>
-                        <tr>
-                            <th>Бел,г</th>
-                            <th>Жир,г</th>
-                            <th>Угл,г</th>
+                    <thead id="thead">
+                        <tr id="id">
+                            <th>Белки</th>
+                            <th>Жиры</th>
+                            <th>Углеводы</th>
                             <th>Ккал</th>
                             <th>Витамин B1</th>
                             <th>Витамин C</th>
@@ -204,8 +205,8 @@
                             <th>Витамин E</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
+                    <tbody id="tbody">
+                        <tr id="tr">
                             <td>7.12</td>
                             <td>5.43</td>
                             <td>3.13</td>
@@ -219,7 +220,7 @@
                 </table>
                 <section class="grid-container">
                     <div class="grid-item">
-                        <input type="text" name="qty" placeholder="кол-во">
+                        <input type="text" id="kolvo" name="qty" placeholder="кол-во">
                     </div>
                     <div class="grid-item" id="unit">
                         <select name="text">
@@ -230,7 +231,7 @@
                         </select>
                     </div>
                     <div class="grid-item" id="ingredient">
-                        <input type="text" name="ing" placeholder="полезный элемент">
+                        <input type="text" id="polezniy_element?" name="ing" placeholder="полезный элемент">
                     </div>
     
                     <div class="grid-item">
